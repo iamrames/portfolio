@@ -1,0 +1,84 @@
+{% extends "blog/base.html" %}
+{% load staticfiles %}
+{% block content %}
+<div class="pic">
+<div class="container">
+	<table class="aboutme">
+		<tr>
+			<td class="td">
+				<h3>VALUES</h3>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+			</td>
+			<td class="td">
+				<h3>GOALS</h3>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+			</td>
+			<td class="td">
+				<h3>HOBBIES</h3>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+			</td>
+		</tr>
+	</table>
+</div>
+</div>
+
+<div class="about">
+<div class="about-main">
+	<table>
+		<tr>
+			<td class="td1">
+				<div class="about-pic">
+					<img src="{% static 'img/me.jpg' %}" alt="No Image Found">
+				</div>
+			</td>
+			<td>
+				<div class="about-content">
+					<h2><center>ABOUT ME</center></h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+					<br>
+					Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</td>
+		</tr>
+	</table>
+</div>
+</div>
+
+<div class="pic">
+<div class="container">
+	<div class="skills-left">
+		<h2>MY SKILLS</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+		<br>
+		Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<a href="{% url 'contact' %}"><input type="button" class="button-btn" value="CONTACT ME"></a>
+	</div>
+	<div class="skills-right">
+		<table>
+		<tr>
+		<td>
+		<h2>WEB DESIGN</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua.
+		<br></p>
+		</td>
+		</tr>
+		<tr>
+		<td>
+		<h2>ONLINE MARKETING</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua.
+		<br></p>
+		</td>
+		</tr>
+		</table>
+	</div>
+</div>
+</div>
+{% endblock %}

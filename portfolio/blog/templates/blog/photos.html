@@ -1,0 +1,30 @@
+{% extends "blog/base.html" %}
+{% load staticfiles %}
+{% block content %}
+<h2><center>PHOTOS</center></h2>
+<h6><center>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<br>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</center></h6>
+<div class="container">
+<table class="photos">
+	<tr>
+		<td> <img src="{% static "img/011.jpg" %}" alt="No img found"></td>
+		<td> <img src="{% static "img/21.jpg" %}" alt="No img found"></td>
+		<td> <img src="{% static "img/31.jpg" %}" alt="No img found"></td>
+	</tr>
+	<tr>
+			<td> <img src="{% static "img/101.jpg" %}" alt="No img found"></td>
+			<td> <img src="{% static "img/51.jpg" %}" alt="No img found"></td>
+			<td> <img src="{% static "img/61.jpg" %}" alt="No img found"></td>
+	</tr>
+	<tr>
+		<td> <img src="{% static "img/71.jpg" %}" alt="No img found"></td>
+		<td> <img src="{% static "img/81.jpg" %}" alt="No img found"></td>
+		<td> <img src="{% static "img/91.jpg" %}" alt="No img found"></td>
+	</tr>
+	<tr>
+		<td> <img src="{% static "img/41.jpg" %}" alt="No img found"></td>
+		<td> <img src="{% static "img/111.jpg" %}" alt="No img found"></td>
+		<td> <img src="{% static "img/121.jpg" %}" alt="No img found"></td>
+	</tr>
+</table>
+</div>
+{% endblock %}

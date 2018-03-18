@@ -1,0 +1,25 @@
+{% extends "blog/base.html" %}
+{% block content %}
+<div class="pic">  
+ <div class="container">
+     <div class="contact">
+          <div class="contact-left">
+               <h2>CONTACT ME</h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+               <p>Milan Tole, Sitapaila</p>
+               <p>Kathmandu, Nepal</p>
+               <p>Email: iamrameshshah@gmail.com</p>
+               <p>Phone: 9845575551</p>
+          </div>
+          <div class="contact-right">
+               <form method="POST">
+                    {{ form.as_p }}<br>
+                    {% csrf_token %}
+                    <input type="submit" class="button-btn" value="CONTACT ME">
+               </form>
+          </div>
+     </div>
+ </div>
+</div>
+{% endblock %}

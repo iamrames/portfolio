@@ -1,0 +1,43 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Rames | Developer</title>
+    <link rel="icon" type="image/png" href="{% static 'img/me.jpg' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="{% static 'css/account.css' %}">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  </head>
+  <body class="body">
+      <header class="header">
+        <div class="container">
+          <div class="logo">
+            <a href="{% url "rames" %}">Rames | Developer</a>
+          </div>
+          <nav class="navbar">
+            <ul>
+              <li> <a href="{% url 'index' %}">HOME</a> </li>
+              <li> <a href="{% url 'portfolio' %}">PORTFOLIO</a> </li>
+              <li> <a href="{% url 'photos' %}">PHOTOS</a> </li>
+              <li> <a href="{% url 'about' %}">ABOUT ME</a> </li>
+              <li> <a href="{% url 'contact' %}">CONTACT</a> </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="banner">
+  			<div class="container">
+    			<div class="banner-text">
+			      <span class="welcome">Welcome!</span><br>
+			      <span class="nice">IT'S NICE TO MEET YOU</span>
+    			</div>
+    		<div class="button">
+      			<a href="{% url 'about' %}"><button type="button" class="button-btn">Know Me More</button></a>
+    		</div>
+    	</div>
+		</div>
+      </header>
+    </body>
+
+
+</html>

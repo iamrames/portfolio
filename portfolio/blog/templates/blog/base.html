@@ -1,0 +1,61 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Rames | Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="{% static 'img/me.jpg' %}">
+    <link rel="stylesheet" href="{% static 'css/account.css' %}">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  </head>
+  <body class="body">
+      <header class="header">
+        <div class="container">
+          <div class="logo">
+            <a href="{% url "rames" %}">Rames | Developer</a>
+          </div>
+          <nav class="navbar">
+            <ul>
+              <li> <a href="{% url 'index' %}">HOME</a> </li>
+              <li> <a href="{% url 'portfolio' %}">PORTFOLIO</a> </li>
+              <li> <a href="{% url 'photos' %}">PHOTOS</a> </li>
+              <li> <a href="{% url 'about' %}">ABOUT ME</a> </li>
+              <li> <a href="{% url 'contact' %}">CONTACT</a> </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </body>
+
+    <main>
+      {% block content %}
+      {% endblock %}
+    </main>
+
+    <footer class="footer">
+        <div class="footer-top">
+          <nav class="navbar-footer">
+            <ul>
+              <li> <a href="{% url 'index' %}">HOME</a> </li>
+              <li> <a href="{% url 'portfolio' %}">PORTFOLIO</a> </li>
+              <li> <a href="{% url 'photos' %}">PHOTOS</a> </li>
+              <li> <a href="{% url 'about' %}">ABOUT</a> </li>
+              <li> <a href="{% url 'contact' %}">CONTACT</a> </li>
+            </ul>
+          </nav>
+          <div class="glyphicon">
+            <div class="icon">
+              &nbsp&nbsp
+            <a href="www.facebook.com"><i class="fab fa-facebook-square fa-3x"></i></a>&nbsp | &nbsp
+            <a href="www.twitter.com"><i class="fab fa-twitter-square fa-3x"></i></a>&nbsp | &nbsp
+            <a href="www.google.com"><i class="fab fa-google-plus-square fa-3x"></i></a>&nbsp | &nbsp
+            <a href="www.linkedin.com"><i class="fab fa-linkedin fa-3x"></i></a>&nbsp | &nbsp
+            <a href="www.github.com"><i class="fab fa-github-square fa-3x"></i></a>&nbsp | &nbsp
+            </div>
+          </div>
+        </div>
+    </footer>
+
+
+</html>
